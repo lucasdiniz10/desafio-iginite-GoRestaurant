@@ -36,6 +36,12 @@ export const Container = styled.div`
             border-radius: 0 8px 8px 0;
             margin: 0 auto;
           }
+
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(0.92);
+          }
         }
       }
     }
