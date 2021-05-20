@@ -12,7 +12,8 @@ import { Container } from './styles';
 
 interface InputProps {
   name: string;
-  icon: IconType;
+  icon?: IconType;
+  placeholder: string;
 }
 
 export default function Input({ name, icon: Icon, ...rest }: InputProps) {
