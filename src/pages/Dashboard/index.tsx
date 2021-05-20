@@ -63,7 +63,6 @@ export default function Dashboard() {
 
   const handleDeleteFood = async (id: number) => {
     await api.delete(`/foods/${id}`);
-
     const foodsFiltered = foods.filter(food => food.id !== id);
 
     setFoods(foodsFiltered);
